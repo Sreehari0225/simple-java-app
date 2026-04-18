@@ -9,8 +9,8 @@
     <packaging>jar</packaging> <!-- JAR packaging -->
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -40,5 +40,11 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+    <repository>
+        <id>nexus-releases</id>
+        <url>http://35.175.229.255:8081/repository/maven-java-releases/</url>
+    </repository>
+</distributionManagement>
 </project>
 
